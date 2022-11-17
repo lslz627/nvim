@@ -1,12 +1,9 @@
 local servers = {
 	"sumneko_lua",
-	-- "cssls",
-	-- "html",
-	-- "tsserver",
 	"pyright",
-	-- "bashls",
 	"jsonls",
-	-- "yamlls",
+    "gopls",
+    "rust_analyzer",
 }
 
 local settings = {
@@ -19,7 +16,7 @@ local settings = {
 		},
 	},
 	log_level = vim.log.levels.INFO,
-	max_concurrent_installers = 4,
+	max_concurrent_installers = 5,
 }
 
 require("mason").setup(settings)

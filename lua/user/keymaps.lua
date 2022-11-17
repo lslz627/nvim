@@ -20,29 +20,35 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 -- Better window navigation
-keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-j>", "<C-w>j", opts)
-keymap("n", "<C-k>", "<C-w>k", opts)
-keymap("n", "<C-l>", "<C-w>l", opts)
+keymap("n", "<A-h>", "<C-w>h", opts)
+keymap("n", "<A-j>", "<C-w>j", opts)
+keymap("n", "<A-k>", "<C-w>k", opts)
+keymap("n", "<A-l>", "<C-w>l", opts)
 
 -- Resize with arrows
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<A-Up>", ":resize -5<CR>", opts)
+keymap("n", "<A-Down>", ":resize +5<CR>", opts)
+keymap("n", "<A-Left>", ":vertical resize -5<CR>", opts)
+keymap("n", "<A-Right>", ":vertical resize +5<CR>", opts)
+-- keymap("n", "__", ":resize -5<CR>", opts)
+-- keymap("n", "++", ":resize +5<CR>", opts)
+-- keymap("n", ">>", ":vertical resize -10<CR>", opts)
+-- keymap("n", "<<", ":vertical resize +10<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Move text up and down
-keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
-keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
+-- keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
+-- keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Insert --
 -- Press jk fast to exit insert mode 
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
+keymap("i", "<M-j>", "<Down>", opts)
+keymap("i", "<M-k>", "<Up>", opts)
 
 -- Visual --
 -- Stay in indent mode
@@ -68,3 +74,4 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
+-- vim.cmd([[ unmap <C-\\> ]])

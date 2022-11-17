@@ -19,3 +19,15 @@ require "user.indentline"
 require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
+require "user.hop"
+
+-- rust
+require "user.rust-tools"
+
+-- golang
+require "user.go"
+
+vim.cmd([[
+    au BufReadPost * if line("'\"") > 0 | if line("'\"") <= line("$") | exe("norm '\"") | else |exe "norm $"| endif | endif
+]])
+
