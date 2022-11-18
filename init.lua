@@ -20,6 +20,7 @@ require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
 require "user.hop"
+require "user.leap"
 
 -- rust
 require "user.rust-tools"
