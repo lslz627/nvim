@@ -64,4 +64,8 @@ nvim_tree.setup {
       },
     },
   },
+    filters = {
+        dotfiles = false,
+        exclude = { "venv" }
+    }
 }

@@ -20,7 +20,8 @@ telescope.setup {
       "--line-number",
       "--column",
       "--hidden",
-      "--smart-case"
+      "--smart-case",
+      "--no-ignore"
     },
 
 
@@ -97,9 +98,11 @@ telescope.setup {
     -- }
     -- Now the picker_config_key will be applied every time you call this
     -- builtin picker
-  --       find_files = {
-  --           hidden = true
-  --       }
+        find_files = {
+            hidden = true,
+            no_ignore = true,
+            no_ignore_parent = true,
+        }
   },
   extensions = {
     -- Your extension configuration goes here:
