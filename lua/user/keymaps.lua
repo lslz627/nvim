@@ -47,16 +47,13 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 -- Press jk fast to exit insert mode 
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
-keymap("i", "<M-j>", "<Down>", opts)
-keymap("i", "<M-k>", "<Up>", opts)
 keymap("i", "<C-a>", "<ESC>I", opts)
-keymap("i", "<A-a>", "<ESC>I", opts)
+keymap("i", "<C-i>", "<ESC>I", opts)
 keymap("i", "<C-e>", "<ESC>A", opts)
-keymap("i", "<A-e>", "<ESC>A", opts)
-keymap("i", "<A-h>", "<Left>", opts)
-keymap("i", "<A-j>", "<Down>", opts)
-keymap("i", "<A-k>", "<Up>", opts)
-keymap("i", "<A-l>", "<Right>", opts)
+keymap("i", "<C-h>", "<Left>", opts)
+keymap("i", "<C-j>", "<Down>", opts)
+keymap("i", "<C-k>", "<Up>", opts)
+keymap("i", "<C-l>", "<Right>", opts)
 
 -- Visual --
 -- Stay in indent mode
