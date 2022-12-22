@@ -50,11 +50,11 @@ keymap("i", "kj", "<ESC>", opts)
 keymap("i", "<C-a>", "<ESC>I", opts)
 keymap("i", "<C-i>", "<ESC>I", opts)
 keymap("i", "<C-e>", "<ESC>A", opts)
-keymap("i", "<A-h>", "<Left>", opts)
-keymap("i", "<A-j>", "<Down>", opts)
-keymap("i", "<A-k>", "<Up>", opts)
-keymap("i", "<A-l>", "<Right>", opts)
-
+-- keymap("i", "<A-h>", "<Left>", opts)
+-- keymap("i", "<A-j>", "<Down>", opts)
+-- keymap("i", "<A-k>", "<Up>", opts)
+-- keymap("i", "<A-l>", "<Right>", opts)
+--
 -- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
