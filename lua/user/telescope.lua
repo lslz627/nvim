@@ -8,6 +8,8 @@ local actions = require "telescope.actions"
 telescope.setup {
   defaults = {
 
+    file_ignore_patterns = { "node_modules", ".git" },
+
     prompt_prefix = " ",
     selection_caret = " ",
     path_display = { "smart" },
@@ -113,8 +115,5 @@ telescope.setup {
     --   extension_config_key = value,
     -- }
     -- please take a look at the readme of the extension you want to configure
-  },
-  file_ignore_patterns = {
-       "./git/*"
-    }
+  }
 }
