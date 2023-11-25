@@ -24,8 +24,8 @@ local settings = {
 local mason_servers = {
 	"sumneko_lua",
 	"jsonls",
-    "rust_analyzer",
-    "clangd",
+    -- "rust_analyzer",
+    -- "clangd",
 }
 
 require("mason").setup(settings)
