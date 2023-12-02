@@ -33,7 +33,7 @@ local options = {
   sidescrolloff = 8,                       -- minimal number of screen columns either side of cursor if wrap is `false`
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
   -- guicursor = ''                           -- don't change terminal cursor
-    cursorcolumn = true
+  cursorcolumn = true
 }
 
 vim.opt.shortmess:append "c"
